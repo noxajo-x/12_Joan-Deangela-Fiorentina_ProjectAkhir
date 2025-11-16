@@ -1,0 +1,205 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url('star2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #2e065bc1;
+    background-blend-mode: darken;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #c59aff;
+    font-family: "Italianno", cursive;
+}
+
+.add{
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 12px rgba(200, 170, 255, 0.4);
+    transition: 0.3s;
+}
+
+.add:hover{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 16px rgba(220, 190, 255, 0.6);
+}
+
+table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 25px rgba(180, 150, 255, 0.4);
+}
+
+table td{
+    border: none;
+    padding: 15px;
+    vertical-align: top;
+}
+
+td:first-child {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+td.actions {
+    /* gap: 10px; */
+}
+
+.book-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.book-author {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #f0e4ff;
+    text-align: center;
+}
+
+
+td p {
+    margin: 0;
+    font-weight: bold;
+    color: #e9d2ff;
+    font-size: 14px;
+    padding: 0;
+}
+
+.cover-img {
+    width: 150px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.35);
+}
+
+td a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+
+td a:hover {
+    background: rgba(255,255,255,0.35);
+    box-shadow: 0 0 8px rgba(240,220,255,0.6);
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#61367dac, #9d00ff00);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #f3e8ff;
+    font-family: "Rubik", sans-serif;
+    z-index: 9999;
+}
+
+.nav-center {
+    transform: translateX(-15vh);
+}
+
+.nav-logo{
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px #b285f5);
+    width: 13vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-left{
+    margin-left: 7vh;
+}
+
+.nav-left h2{
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: lighter;
+    font-size: 8vh;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nav-right{
+    display: flex;
+    margin-right: 7vh;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: white;
+    font-family: "Pinyon Script", cursive;
+    font-size: 4vh;
+    transition: all 0.3s ease;
+}
+
+.nav-right a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 10px #d7bdfb, 0 0 15px #9b68df;
+    animation: flicker 0.6s ease-in-out infinite alternate;
+}
+@keyframes flicker{
+    from { text-shadow: 0 0 4px #b27df7, 0 0 10px #c8a9ff; }
+    to { text-shadow: 0 0 8px #c3a8ea, 0 0 16px #d5c1f0; }
+}
+
+/* FOOTER */
+.footer{
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+}

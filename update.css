@@ -1,0 +1,179 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background: url('your-bg.jpg') center/cover no-repeat fixed;
+    min-height: 100vh;
+    position: relative;
+    padding: 40px;
+    color: #f4eaff;
+    background-image: url('star2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #391163bc;
+    background-blend-mode: darken;
+}
+
+h2{
+    font-family: "Pinyon Script", cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.back{
+    display: block;
+    margin: 0 auto 25px auto;
+    color: #e8caff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 6px 14px;
+    border: 1px solid #c89bff;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+
+.back:hover {
+    background: rgba(200, 155, 255, 0.2);
+    box-shadow: 0 0 10px #c89bff;
+}
+
+table{
+    margin: auto;
+    margin-top: -5vh;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px 35px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(220, 150, 255, 0.4);
+    box-shadow: 0 0 15px rgba(200, 140, 255, 0.3);
+}
+
+td {
+    padding: 10px 12px;
+    font-size: 18px;
+    color: #f5e7ff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d5b0ff;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fefaff;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family: "Nunito", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #c984ff;
+    box-shadow: 0 0 10px #c984ff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #b09ad1, #7e4dff);
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Quintessential", serif;
+    cursor: pointer;
+    box-shadow: 0 0 16px rgba(180,120,255,0.6);
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(200,160,255,0.9);
+}
+
+/* NAVBAR */
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#61367dac, #9d00ff00);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #f3e8ff;
+    font-family: "Rubik", sans-serif;
+    z-index: 9999;
+}
+
+.nav-center {
+    transform: translateX(-15vh);
+}
+
+.nav-logo{
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px #b285f5);
+    width: 13vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-left{
+    margin-left: 7vh;
+}
+
+.nav-left h2{
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: lighter;
+    font-size: 8vh;
+    color: white;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nav-right{
+    display: flex;
+    margin-right: 7vh;
+}
+
+.nav-right a{
+    text-decoration: none;
+    color: white;
+    font-family: "Pinyon Script", cursive;
+    font-size: 4vh;
+    transition: all 0.3s ease;
+}
+
+.nav-right a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 10px #d7bdfb, 0 0 15px #9b68df;
+    animation: flicker 0.6s ease-in-out infinite alternate;
+}
+@keyframes flicker{
+    from { text-shadow: 0 0 4px #b27df7, 0 0 10px #c8a9ff; }
+    to { text-shadow: 0 0 8px #c3a8ea, 0 0 16px #d5c1f0; }
+}
+
+/* FOOTER */
+.footer{
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    font-family: 'Times New Roman', Times, serif;
+}
