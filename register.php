@@ -18,7 +18,7 @@ if(isset($_POST['register'])){
     // Cek apakah query berhasil
     if($result){
         // redirect ke halaman login setelah registrasi sukses
-        echo "<script>alert('Registrasi Anda Telah Berhasil');
+        echo "<script>alert('Your Registration Is Complete — Your Journey Begins Now');
         window.location='login.php';</script>";
     } else{
         //  Tampilkan pesan eror jika registrasi gagal
@@ -128,4 +128,5 @@ if(isset($_POST['register'])){
         <p>© 2025 Midnight Library. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
