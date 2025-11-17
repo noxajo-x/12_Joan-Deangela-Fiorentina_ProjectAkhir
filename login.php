@@ -17,7 +17,7 @@ if(isset($_POST['login'])){
         header("Location: show.php");
         exit;
     } else {
-        echo "<script>alert('Username atau Password salah');</script>";
+        echo "<script>alert('Incorrect Username or Password');</script>";
     }
 }
 ?>
@@ -86,4 +86,5 @@ if(isset($_POST['login'])){
         <p>© 2025 Midnight Library. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
